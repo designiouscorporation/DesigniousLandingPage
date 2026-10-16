@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <!-- Seguridad: solo se permite lo que la página usa (GitHub Pages no deja configurar cabeceras HTTP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Designious Corporation | Tecnología inteligente a la medida de tu negocio</title>
   <meta name="description" content="IA, visión por computadora, drones, mapas 2D/3D, análisis de datos y automatización a la medida. Tu visión, nuestro propósito.">
@@ -13,8 +16,14 @@
   <meta property="og:title" content="Designious Corporation">
   <meta property="og:description" content="Tecnología inteligente a la medida de tu negocio. IA, visión por computadora y drones.">
   <meta property="og:url" content="https://designiouscorporation.com/">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:image" content="https://designiouscorporation.com/assets/img/og-image.jpg">
+  <meta property="og:image:alt" content="Designious Corporation: tecnología inteligente a la medida de tu negocio">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Designious Corporation">
+  <meta name="twitter:description" content="Tecnología inteligente a la medida de tu negocio. IA, visión por computadora y drones.">
+  <meta name="twitter:image" content="https://designiouscorporation.com/assets/img/og-image.jpg">
 
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -33,6 +42,8 @@
     "url": "https://designiouscorporation.com/",
     "logo": "https://designiouscorporation.com/assets/img/icon-192.png",
     "slogan": "Tu visión, nuestro propósito",
+    "address": { "@type": "PostalAddress", "addressLocality": "Neiva", "addressRegion": "Huila", "addressCountry": "CO" },
+    "sameAs": ["https://www.linkedin.com/company/designious-corporation"],
     "telephone": "+57 311 208 7255",
     "email": "designiouscorporation@gmail.com",
     "contactPoint": {
@@ -42,7 +53,13 @@
       "telephone": "+57 311 208 7255",
       "email": "designiouscorporation@gmail.com",
       "availableLanguage": ["es", "en"]
-    }
+    },
+    "employee": [
+      { "@type": "Person", "name": "Diego Armando Lomelin Dussan", "jobTitle": "Gerente comercial", "sameAs": "https://www.linkedin.com/in/diego-lomelin/" },
+      { "@type": "Person", "name": "Gabriel Alejandro Diaz Fierro", "jobTitle": "CEO", "sameAs": "https://www.linkedin.com/in/galdifi/" },
+      { "@type": "Person", "name": "Daniel Eduardo Lomelin Dussan", "jobTitle": "Ingeniero eléctrico", "sameAs": "https://www.linkedin.com/in/daniel-eduardo-lomelin-dussan-980a4134/" },
+      { "@type": "Person", "name": "Luisa Avalo Pino", "jobTitle": "Equipo de ingeniería", "sameAs": "https://www.linkedin.com/in/luisa-avalo-pino/" }
+    ]
   }
   </script>
 </head>
@@ -58,20 +75,20 @@
       <nav class="top__nav" aria-label="Principal">
         <a href="#servicios" data-i18n="nav.services">Servicios</a>
         <a href="#caso" data-i18n="nav.case">Caso de éxito</a>
-        <a href="#videos" data-i18n="nav.videos">En acción</a>
+        <a href="#proceso" data-i18n="nav.process">Proceso</a>
+        <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
         <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       </nav>
       <div class="top__tools">
         <div class="themes" role="group" aria-label="Estilo" data-i18n-aria="theme.group">
           <button type="button" class="theme" data-theme-btn="black" aria-pressed="false" aria-label="Estilo negro" data-i18n-aria="theme.black" title="Negro"></button>
           <button type="button" class="theme" data-theme-btn="white" aria-pressed="true" aria-label="Estilo blanco" data-i18n-aria="theme.white" title="Blanco"></button>
-          <button type="button" class="theme" data-theme-btn="red" aria-pressed="false" aria-label="Estilo rojo" data-i18n-aria="theme.red" title="Rojo"></button>
         </div>
         <div class="lang" role="group" aria-label="Idioma / Language">
           <button type="button" class="lang__btn" data-lang="es" aria-pressed="true">ES</button>
           <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <a class="btn btn--small js-wa" href="https://wa.me/573112087255" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--small js-wa" href="https://wa.me/573112087255" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
     </div>
   </header>
@@ -88,9 +105,9 @@
         <h1 data-i18n="hero.title">Tecnología inteligente a la medida de tu negocio</h1>
         <p class="banner__lead" data-i18n="hero.lead">IA, visión por computadora y drones que convierten tus imágenes y datos en decisiones.</p>
         <div class="banner__actions">
-          <a class="btn js-wa" href="https://wa.me/573112087255" target="_blank" rel="noopener" data-i18n="cta.whatsapp">Escríbenos por WhatsApp</a>
+          <a class="btn js-wa" href="https://wa.me/573112087255" target="_blank" rel="noopener noreferrer" data-i18n="cta.whatsapp">Escríbenos por WhatsApp</a>
           <a class="btn btn--glass" href="#caso" data-i18n="hero.case">Ver un caso real</a>
-          <a class="btn btn--glass" href="assets/docs/Designious-portafolio.pdf" target="_blank" rel="noopener">
+          <a class="btn btn--glass" href="assets/docs/Designious-portafolio.pdf" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
             <span data-i18n="hero.pdf">Descargar portafolio</span>
           </a>
@@ -127,6 +144,7 @@
                 <div>
                   <h3 data-i18n="s1.t">Análisis de datos</h3>
                   <p data-i18n="s1.d">Tus datos, en tableros claros para decidir.</p>
+                  <p class="what__out" data-i18n="s1.o">Entregas: tableros e informes claros</p>
                 </div>
               </li>
               <li class="what__item">
@@ -134,6 +152,7 @@
                 <div>
                   <h3 data-i18n="s2.t">Visión por computadora</h3>
                   <p data-i18n="s2.d">Tus imágenes, convertidas en información.</p>
+                  <p class="what__out" data-i18n="s2.o">Entregas: conteos, detecciones y mapas de vigor</p>
                 </div>
               </li>
               <li class="what__item">
@@ -141,6 +160,7 @@
                 <div>
                   <h3 data-i18n="s3.t">Prototipado electrónico</h3>
                   <p data-i18n="s3.d">De la idea a un equipo que funciona.</p>
+                  <p class="what__out" data-i18n="s3.o">Entregas: prototipo funcional</p>
                 </div>
               </li>
               <li class="what__item">
@@ -148,6 +168,7 @@
                 <div>
                   <h3 data-i18n="s4.t">Drones y mapas 2D / 3D</h3>
                   <p data-i18n="s4.d">Tu terreno o cultivo, mapeado desde el aire.</p>
+                  <p class="what__out" data-i18n="s4.o">Entregas: mapas 2D/3D e índices de vegetación</p>
                 </div>
               </li>
               <li class="what__item">
@@ -155,6 +176,7 @@
                 <div>
                   <h3 data-i18n="s5.t">Automatización a la medida</h3>
                   <p data-i18n="s5.d">Tareas repetitivas que se hacen solas.</p>
+                  <p class="what__out" data-i18n="s5.o">Entregas: procesos que se ejecutan solos</p>
                 </div>
               </li>
               <li class="what__item">
@@ -162,11 +184,46 @@
                 <div>
                   <h3 data-i18n="s6.t">Microcomputadoras inteligentes</h3>
                   <p data-i18n="s6.d">Equipos pequeños que procesan datos en sitio.</p>
+                  <p class="what__out" data-i18n="s6.o">Entregas: equipos listos para trabajar en campo</p>
                 </div>
               </li>
             </ul>
           </section>
         </div>
+      </div>
+    </section>
+
+    <!-- APLICACIONES -->
+    <section class="sec sec--alt" id="aplicaciones" aria-labelledby="applyTitle">
+      <div class="wrap">
+        <header class="sec__head">
+          <span class="eyebrow" data-i18n="ap.tag">Aplicaciones</span>
+          <h2 id="applyTitle" data-i18n="ap.title">Dónde puede ayudarte nuestra tecnología</h2>
+          <p data-i18n="ap.lead">Hoy atendemos el sector agroindustrial, con un caso real en palma de aceite. La misma tecnología aplica a estas áreas.</p>
+        </header>
+        <ul class="apply__list">
+          <li class="apply apply--now">
+            <span class="apply__now" data-i18n="ap.now">Sector que atendemos hoy</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14zM5 19l7-7"/></svg>
+            <h3 data-i18n="a1.t">Agroindustria</h3>
+            <p data-i18n="a1.d">Conteo de plantas, vigor del cultivo y zonas que necesitan atención.</p>
+          </li>
+          <li class="apply">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></svg>
+            <h3 data-i18n="a2.t">Terrenos y mapas</h3>
+            <p data-i18n="a2.d">Mapas 2D y 3D de lotes, predios y obras, tomados desde el aire.</p>
+          </li>
+          <li class="apply">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg>
+            <h3 data-i18n="a3.t">Industria y procesos</h3>
+            <p data-i18n="a3.d">Automatización de tareas repetitivas y tableros para decidir con datos.</p>
+          </li>
+          <li class="apply">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>
+            <h3 data-i18n="a4.t">Innovación y prototipos</h3>
+            <p data-i18n="a4.d">De la idea a un equipo electrónico que funciona y procesa datos en sitio.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -182,6 +239,7 @@
       <div class="case__body">
         <div class="wrap">
           <div class="steps">
+            <div class="steps__side">
             <ol class="steps__list" role="tablist" aria-label="Etapas del caso" data-i18n-aria="case.steps">
               <li>
                 <button type="button" role="tab" id="tab1" aria-controls="pane1" aria-selected="true" class="step is-active" data-step="1">
@@ -211,6 +269,8 @@
                 </button>
               </li>
             </ol>
+            <button type="button" class="steps__toggle" aria-pressed="false" data-i18n="case.pause">Pausar cambio automático</button>
+          </div>
 
             <div class="steps__view">
               <div class="pane is-active" role="tabpanel" id="pane1" aria-labelledby="tab1">
@@ -268,8 +328,41 @@
       </div>
     </section>
 
+    <!-- CÓMO TRABAJAMOS -->
+    <section class="sec sec--base" id="proceso" aria-labelledby="procTitle">
+      <div class="wrap">
+        <header class="sec__head">
+          <span class="eyebrow" data-i18n="pr.tag">Cómo trabajamos</span>
+          <h2 id="procTitle" data-i18n="pr.title">De tu necesidad a resultados que puedes usar</h2>
+          <p data-i18n="pr.lead">Un proceso simple y transparente, con entregables claros en cada paso.</p>
+        </header>
+        <ol class="proc__list">
+          <li class="proc">
+            <span class="proc__n" aria-hidden="true">01</span>
+            <h3 data-i18n="p1.t">Diagnóstico</h3>
+            <p data-i18n="p1.d">Escuchamos qué quieres resolver y revisamos tus datos o imágenes.</p>
+          </li>
+          <li class="proc">
+            <span class="proc__n" aria-hidden="true">02</span>
+            <h3 data-i18n="p2.t">Propuesta</h3>
+            <p data-i18n="p2.d">Definimos el alcance, los entregables y los tiempos antes de empezar.</p>
+          </li>
+          <li class="proc">
+            <span class="proc__n" aria-hidden="true">03</span>
+            <h3 data-i18n="p3.t">Desarrollo</h3>
+            <p data-i18n="p3.d">Construimos y probamos la solución, y te mostramos los avances.</p>
+          </li>
+          <li class="proc">
+            <span class="proc__n" aria-hidden="true">04</span>
+            <h3 data-i18n="p4.t">Entrega</h3>
+            <p data-i18n="p4.d">Recibes los resultados en un formato claro y te explicamos cómo usarlos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
     <!-- VIDEOS -->
-    <section class="sec sec--base" id="videos">
+    <section class="sec sec--base sec--ruled" id="videos">
       <div class="wrap">
         <header class="sec__head">
           <h2 data-i18n="vid.title">Míralo en acción</h2>
@@ -294,6 +387,190 @@
       </div>
     </section>
 
+    <!-- SOBRE NOSOTROS -->
+    <section class="sec sec--alt about" id="nosotros" aria-labelledby="aboutTitle">
+      <div class="wrap">
+        <header class="sec__head">
+          <span class="eyebrow" data-i18n="ab.tag">Sobre nosotros</span>
+          <h2 id="aboutTitle" data-i18n="ab.title">Una startup de innovación tecnológica en Neiva, Huila</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__text">
+            <p data-i18n="ab.p1">Designious Corporation es una startup joven que nació para llevar la inteligencia artificial, la visión por computadora y los drones a empresas y productores que quieren decidir con datos.</p>
+            <p data-i18n="ab.p2">Estamos empezando y lo decimos con claridad: tenemos un caso real, con cifras reales, y preferimos mostrar lo que hemos hecho antes que prometer lo que no hemos hecho. Recientemente presentamos nuestra tecnología en una feria de innovación tecnológica de la región.</p>
+            <ul class="about__facts">
+              <li data-i18n="ab.f1">Neiva, Huila, Colombia</li>
+              <li data-i18n="ab.f2">Startup de innovación tecnológica</li>
+              <li data-i18n="ab.f3">Atención en español e inglés</li>
+              <li data-i18n="ab.f4">Sector actual: agroindustria</li>
+            </ul>
+          </div>
+          <aside class="mission">
+            <h3 data-i18n="ab.m.t">Misión</h3>
+            <p data-i18n="ab.m.d">Hacer accesible la tecnología inteligente para que más negocios de la región conviertan sus imágenes y datos en decisiones.</p>
+          </aside>
+        </div>
+        <div class="fair">
+          <h3 class="fair__title" data-i18n="fair.title">Presentes en la feria de innovación de la Cámara de Comercio</h3>
+          <p class="fair__lead" data-i18n="fair.lead">Presentamos nuestras soluciones en vivo y logramos acercamientos comerciales con clientes, federaciones y gremios importantes de la región.</p>
+          <div class="fair__grid">
+            <figure>
+              <img src="assets/img/feria/feria-stand.jpg" alt="Stand de Designious Corporation con dos pantallas: análisis de comportamiento humano con cámara infrarroja y el caso de éxito de la palma, junto al cartel del caso" data-i18n-alt="fair.a1" width="1000" height="1249" loading="lazy">
+              <figcaption data-i18n="fair.c1">Pantalla 1: cámara de espectro infrarrojo para analizar el comportamiento humano, otra de nuestras soluciones. Pantalla 2: el caso de éxito de la plantación de palma, desde las imágenes del dron hasta el mapa de vigor y las zonas prioritarias.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/feria/feria-equipo.jpg" alt="Tres personas frente al stand de Designious Corporation durante la feria" data-i18n-alt="fair.a2" width="1000" height="1249" loading="lazy">
+              <figcaption data-i18n="fair.c2">En nuestro stand durante la feria.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <ul class="values">
+          <li class="value">
+            <h3 data-i18n="v1.t">Claridad</h3>
+            <p data-i18n="v1.d">Explicamos nuestro trabajo en lenguaje simple y con resultados medibles.</p>
+          </li>
+          <li class="value">
+            <h3 data-i18n="v2.t">Honestidad</h3>
+            <p data-i18n="v2.d">Solo prometemos lo que podemos entregar.</p>
+          </li>
+          <li class="value">
+            <h3 data-i18n="v3.t">A la medida</h3>
+            <p data-i18n="v3.d">Cada solución parte de tu problema, no de una plantilla.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EQUIPO: todas las tarjetas del mismo tamaño.
+         Fotos: assets/img/team/*.jpg (si falta la foto se muestran las iniciales). -->
+    <section class="sec team" id="equipo" aria-labelledby="teamTitle">
+      <div class="wrap">
+        <header class="sec__head">
+          <h2 id="teamTitle" data-i18n="team.title">Las personas detrás de Designious</h2>
+          <p data-i18n="team.lead">Un equipo que une dirección, relación con clientes e ingeniería para que tu proyecto salga adelante. Conócenos y visita nuestros perfiles profesionales.</p>
+        </header>
+
+        <ul class="team__list">
+          <!-- Gerente comercial -->
+          <li class="member">
+            <figure class="member__photo">
+              <span class="member__initials" aria-hidden="true">DL</span>
+              <img src="assets/img/team/diego-lomelin.jpg" alt="" width="800" height="800" loading="lazy">
+            </figure>
+            <div class="member__body">
+              <p class="member__role" data-i18n="ct.role">Gerente comercial</p>
+              <h3 class="member__name" id="n-diego">Diego Armando Lomelin Dussan</h3>
+              <p class="member__bio" data-i18n="t2.bio">Es el primer contacto de cada proyecto: escucha lo que necesitas, define el alcance contigo y te acompaña desde la primera conversación hasta la propuesta.</p>
+              <ul class="member__tags">
+                <li data-i18n="t2.c1">Alianzas con clientes</li>
+                <li data-i18n="t2.c2">Asesoría comercial</li>
+                <li data-i18n="t2.c3">Propuestas</li>
+                <li data-i18n="t2.c4">Atención a clientes</li>
+              </ul>
+              <a class="member__link" id="in-diego" aria-labelledby="in-diego n-diego" href="https://www.linkedin.com/in/diego-lomelin/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+                <span data-i18n="team.linkedin">Ver perfil en LinkedIn</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- CEO -->
+          <li class="member">
+            <figure class="member__photo">
+              <span class="member__initials" aria-hidden="true">GD</span>
+              <img src="assets/img/team/ceo.jpg" alt="" width="800" height="800" loading="lazy">
+            </figure>
+            <div class="member__body">
+              <p class="member__role" data-i18n="t1.role">CEO</p>
+              <h3 class="member__name" id="n-ceo">Gabriel Alejandro Diaz Fierro</h3>
+              <p class="member__bio" data-i18n="t1.bio">Lidera la visión y la estrategia de Designious y se asegura de que cada proyecto convierta la tecnología en resultados reales para el negocio de nuestros clientes.</p>
+              <ul class="member__tags">
+                <li data-i18n="t1.c1">Visión y estrategia</li>
+                <li data-i18n="t1.c2">Innovación</li>
+                <li data-i18n="t1.c3">Automatización</li>
+                <li data-i18n="t1.c4">Visión por computadora</li>
+              </ul>
+              <a class="member__link" id="in-ceo" aria-labelledby="in-ceo n-ceo" href="https://www.linkedin.com/in/galdifi/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+                <span data-i18n="team.linkedin">Ver perfil en LinkedIn</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Ingeniero eléctrico -->
+          <li class="member">
+            <figure class="member__photo">
+              <span class="member__initials" aria-hidden="true">DL</span>
+              <img src="assets/img/team/daniel-lomelin.jpg" alt="" width="800" height="800" loading="lazy">
+            </figure>
+            <div class="member__body">
+              <p class="member__role" data-i18n="t3.role">Ingeniero eléctrico</p>
+              <h3 class="member__name" id="n-daniel">Daniel Eduardo Lomelin Dussan</h3>
+              <p class="member__bio" data-i18n="t3.bio">Diseña y pone a funcionar la parte electrónica de las soluciones: prototipos, equipos de campo y microcomputadoras que procesan datos en sitio.</p>
+              <ul class="member__tags">
+                <li data-i18n="t3.c1">Electrónica</li>
+                <li data-i18n="t3.c2">Prototipado</li>
+                <li data-i18n="t3.c3">Microcomputadoras</li>
+              </ul>
+              <a class="member__link" id="in-daniel" aria-labelledby="in-daniel n-daniel" href="https://www.linkedin.com/in/daniel-eduardo-lomelin-dussan-980a4134/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+                <span data-i18n="team.linkedin">Ver perfil en LinkedIn</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Equipo de ingeniería -->
+          <li class="member">
+            <figure class="member__photo">
+              <span class="member__initials" aria-hidden="true">LA</span>
+              <img src="assets/img/team/luisa-avalo.jpg" alt="" width="800" height="800" loading="lazy">
+            </figure>
+            <div class="member__body">
+              <p class="member__role" data-i18n="t4.role">Equipo de ingeniería</p>
+              <h3 class="member__name" id="n-luisa">Luisa Avalo Pino</h3>
+              <p class="member__bio" data-i18n="t4.bio">Desarrolla las soluciones que entregamos: del procesamiento de imágenes y datos a los mapas y tableros que usa el cliente.</p>
+              <ul class="member__tags">
+                <li data-i18n="t4.c1">Ingeniería</li>
+              </ul>
+              <a class="member__link" id="in-luisa" aria-labelledby="in-luisa n-luisa" href="https://www.linkedin.com/in/luisa-avalo-pino/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+                <span data-i18n="team.linkedin">Ver perfil en LinkedIn</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="sec sec--base" id="preguntas" aria-labelledby="faqTitle">
+      <div class="wrap">
+        <header class="sec__head">
+          <span class="eyebrow" data-i18n="faq.tag">Preguntas frecuentes</span>
+          <h2 id="faqTitle" data-i18n="faq.title">Lo que nos suelen preguntar</h2>
+        </header>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary data-i18n="q1.q">¿Con qué datos puedo empezar?</summary>
+            <p data-i18n="q1.a">Con fotos aéreas, imágenes, hojas de cálculo o registros que ya tengas. Si aún no los tienes, lo definimos juntos en el diagnóstico.</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="q2.q">¿Cuánto cuesta y cuánto tarda?</summary>
+            <p data-i18n="q2.a">Depende del alcance. Después del diagnóstico te enviamos una propuesta con el precio, los entregables y los tiempos.</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="q3.q">¿Qué recibo al final?</summary>
+            <p data-i18n="q3.a">Resultados que puedes usar: mapas, tableros e informes con recomendaciones, como en el caso de la plantación de palma.</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="q4.q">¿Atienden fuera de Neiva?</summary>
+            <p data-i18n="q4.a">Estamos en Neiva, Huila, Colombia. Cuéntanos dónde está tu proyecto y evaluamos cómo atenderlo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACTO -->
     <section class="contact" id="contacto">
       <div class="wrap contact__grid">
@@ -301,7 +578,7 @@
           <h2 data-i18n="ct.title">Cuéntanos qué quieres resolver</h2>
           <p class="contact__lead" data-i18n="ct.lead">Escríbenos por WhatsApp y conversemos sobre tu proyecto.</p>
           <div class="contact__actions">
-            <a class="btn btn--white js-wa" href="https://wa.me/573112087255" target="_blank" rel="noopener" data-i18n="cta.whatsapp">Escríbenos por WhatsApp</a>
+            <a class="btn btn--white js-wa" href="https://wa.me/573112087255" target="_blank" rel="noopener noreferrer" data-i18n="cta.whatsapp">Escríbenos por WhatsApp</a>
             <a class="btn btn--line" href="mailto:designiouscorporation@gmail.com" data-i18n="ct.mail">Escríbenos por correo</a>
           </div>
         </div>
@@ -312,6 +589,7 @@
           <a class="person__tel" href="tel:+573112087255">+57 311 208 7255</a>
           <span class="person__note" data-i18n="ct.note">WhatsApp o llamada</span>
           <a class="person__mail" href="mailto:designiouscorporation@gmail.com">designiouscorporation@gmail.com</a>
+          <span class="person__loc" data-i18n="ct.loc">Neiva, Huila, Colombia</span>
         </address>
       </div>
     </section>
@@ -322,7 +600,13 @@
       <img data-logo="stack" src="assets/img/logo-stack-black.png" alt="Designious Corporation" width="862" height="780" loading="lazy">
       <div class="foot__txt">
         <p class="foot__motto" data-i18n="motto">Tu visión, nuestro propósito</p>
+        <p class="foot__loc" data-i18n="ct.loc">Neiva, Huila, Colombia</p>
         <p><a class="foot__mail" href="mailto:designiouscorporation@gmail.com">designiouscorporation@gmail.com</a></p>
+        <p><a class="foot__social" href="https://www.linkedin.com/company/designious-corporation" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+          <span data-i18n="foot.linkedin">Síguenos en LinkedIn</span>
+        </a></p>
+        <p class="foot__legal"><a href="privacidad.html" data-i18n="foot.privacy">Política de privacidad</a></p>
         <p data-i18n="foot.rights">© 2026 Designious Corporation. Todos los derechos reservados.</p>
       </div>
     </div>

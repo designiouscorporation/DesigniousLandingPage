@@ -9,12 +9,12 @@
       wa: "Hola, quiero información sobre los servicios de Designious Corporation.",
       i18n: {
         "skip": "Saltar al contenido",
-        "nav.services": "Servicios", "nav.case": "Caso de éxito", "nav.videos": "En acción", "nav.contact": "Contacto",
+        "nav.services": "Servicios", "nav.case": "Caso de éxito", "nav.process": "Proceso", "nav.about": "Nosotros", "nav.contact": "Contacto",
         "cta.whatsapp": "Escríbenos por WhatsApp",
         "hero.title": "Tecnología inteligente a la medida de tu negocio",
         "hero.lead": "IA, visión por computadora y drones que convierten tus imágenes y datos en decisiones.",
         "hero.case": "Ver un caso real", "hero.pdf": "Descargar portafolio",
-        "theme.group": "Estilo", "theme.black": "Estilo negro", "theme.white": "Estilo blanco", "theme.red": "Estilo rojo",
+        "theme.group": "Estilo", "theme.black": "Estilo negro", "theme.white": "Estilo blanco",
         "motto": "Tu visión, nuestro propósito",
         "video.sound": "Ver con sonido", "video.mute": "Silenciar", "nav.down": "Bajar",
         "services.title": "Lo que Designious puede hacer por tu negocio",
@@ -56,10 +56,90 @@
         "vid.a": "La plataforma en uso, del archivo del dron al mapa",
         "vid.b": "Recorrido corto por la plataforma",
         "vid.note": "Los textos dentro de los videos están en español.",
+        "team.title": "Las personas detrás de Designious",
+        "team.lead": "Un equipo que une dirección, relación con clientes e ingeniería para que tu proyecto salga adelante. Conócenos y visita nuestros perfiles profesionales.",
+        "team.linkedin": "Ver perfil en LinkedIn",
+        "t1.role": "CEO",
+        "t1.bio": "Lidera la visión y la estrategia de Designious y se asegura de que cada proyecto convierta la tecnología en resultados reales para el negocio de nuestros clientes.",
+        "t1.c1": "Visión y estrategia", "t1.c2": "Innovación", "t1.c3": "Automatización", "t1.c4": "Visión por computadora",
+        "t2.bio": "Es el primer contacto de cada proyecto: escucha lo que necesitas, define el alcance contigo y te acompaña desde la primera conversación hasta la propuesta.",
+        "t2.c1": "Alianzas con clientes", "t2.c2": "Asesoría comercial", "t2.c3": "Propuestas", "t2.c4": "Atención a clientes",
+        "t3.role": "Ingeniero eléctrico",
+        "t3.bio": "Diseña y pone a funcionar la parte electrónica de las soluciones: prototipos, equipos de campo y microcomputadoras que procesan datos en sitio.",
+        "t3.c1": "Electrónica", "t3.c2": "Prototipado", "t3.c3": "Microcomputadoras",
+        "t4.role": "Equipo de ingeniería",
+        "t4.bio": "Desarrolla las soluciones que entregamos: del procesamiento de imágenes y datos a los mapas y tableros que usa el cliente.",
+        "t4.c1": "Ingeniería",
         "ct.title": "Cuéntanos qué quieres resolver",
         "ct.lead": "Escríbenos por WhatsApp y conversemos sobre tu proyecto.",
-        "ct.pdf": "Descargar portafolio (PDF)", "ct.mail": "Escríbenos por correo",
+        "ct.mail": "Escríbenos por correo",
         "ct.role": "Gerente comercial", "ct.note": "WhatsApp o llamada",
+        "ap.tag": "Aplicaciones",
+        "ap.title": "Dónde puede ayudarte nuestra tecnología",
+        "ap.lead": "Hoy atendemos el sector agroindustrial, con un caso real en palma de aceite. La misma tecnología aplica a estas áreas.",
+        "a1.t": "Agroindustria",
+        "a1.d": "Conteo de plantas, vigor del cultivo y zonas que necesitan atención.",
+        "a2.t": "Terrenos y mapas",
+        "a2.d": "Mapas 2D y 3D de lotes, predios y obras, tomados desde el aire.",
+        "a3.t": "Industria y procesos",
+        "a3.d": "Automatización de tareas repetitivas y tableros para decidir con datos.",
+        "a4.t": "Innovación y prototipos",
+        "a4.d": "De la idea a un equipo electrónico que funciona y procesa datos en sitio.",
+        "pr.tag": "Cómo trabajamos",
+        "pr.title": "De tu necesidad a resultados que puedes usar",
+        "pr.lead": "Un proceso simple y transparente, con entregables claros en cada paso.",
+        "p1.t": "Diagnóstico",
+        "p1.d": "Escuchamos qué quieres resolver y revisamos tus datos o imágenes.",
+        "p2.t": "Propuesta",
+        "p2.d": "Definimos el alcance, los entregables y los tiempos antes de empezar.",
+        "p3.t": "Desarrollo",
+        "p3.d": "Construimos y probamos la solución, y te mostramos los avances.",
+        "p4.t": "Entrega",
+        "p4.d": "Recibes los resultados en un formato claro y te explicamos cómo usarlos.",
+        "ab.tag": "Sobre nosotros",
+        "ab.title": "Una startup de innovación tecnológica en Neiva, Huila",
+        "ab.p1": "Designious Corporation es una startup joven que nació para llevar la inteligencia artificial, la visión por computadora y los drones a empresas y productores que quieren decidir con datos.",
+        "ab.p2": "Estamos empezando y lo decimos con claridad: tenemos un caso real, con cifras reales, y preferimos mostrar lo que hemos hecho antes que prometer lo que no hemos hecho. Recientemente presentamos nuestra tecnología en una feria de innovación tecnológica de la región.",
+        "ab.f1": "Neiva, Huila, Colombia",
+        "ab.f2": "Startup de innovación tecnológica",
+        "ab.f3": "Atención en español e inglés",
+        "ab.m.t": "Misión",
+        "ab.m.d": "Hacer accesible la tecnología inteligente para que más negocios de la región conviertan sus imágenes y datos en decisiones.",
+        "v1.t": "Claridad",
+        "v1.d": "Explicamos nuestro trabajo en lenguaje simple y con resultados medibles.",
+        "v2.t": "Honestidad",
+        "v2.d": "Solo prometemos lo que podemos entregar.",
+        "v3.t": "A la medida",
+        "v3.d": "Cada solución parte de tu problema, no de una plantilla.",
+        "faq.tag": "Preguntas frecuentes",
+        "faq.title": "Lo que nos suelen preguntar",
+        "q1.q": "¿Con qué datos puedo empezar?",
+        "q1.a": "Con fotos aéreas, imágenes, hojas de cálculo o registros que ya tengas. Si aún no los tienes, lo definimos juntos en el diagnóstico.",
+        "q2.q": "¿Cuánto cuesta y cuánto tarda?",
+        "q2.a": "Depende del alcance. Después del diagnóstico te enviamos una propuesta con el precio, los entregables y los tiempos.",
+        "q3.q": "¿Qué recibo al final?",
+        "q3.a": "Resultados que puedes usar: mapas, tableros e informes con recomendaciones, como en el caso de la plantación de palma.",
+        "q4.q": "¿Atienden fuera de Neiva?",
+        "q4.a": "Estamos en Neiva, Huila, Colombia. Cuéntanos dónde está tu proyecto y evaluamos cómo atenderlo.",
+        "s1.o": "Entregas: tableros e informes claros",
+        "s2.o": "Entregas: conteos, detecciones y mapas de vigor",
+        "s3.o": "Entregas: prototipo funcional",
+        "s4.o": "Entregas: mapas 2D/3D e índices de vegetación",
+        "s5.o": "Entregas: procesos que se ejecutan solos",
+        "s6.o": "Entregas: equipos listos para trabajar en campo",
+        "ct.loc": "Neiva, Huila, Colombia",
+        "foot.privacy": "Política de privacidad",
+        "ap.now": "Sector que atendemos hoy",
+        "ab.f4": "Sector actual: agroindustria",
+        "fair.title": "Presentes en la feria de innovación de la Cámara de Comercio",
+        "fair.lead": "Presentamos nuestras soluciones en vivo y logramos acercamientos comerciales con clientes, federaciones y gremios importantes de la región.",
+        "fair.c1": "Pantalla 1: cámara de espectro infrarrojo para analizar el comportamiento humano, otra de nuestras soluciones. Pantalla 2: el caso de éxito de la plantación de palma, desde las imágenes del dron hasta el mapa de vigor y las zonas prioritarias.",
+        "fair.c2": "En nuestro stand durante la feria.",
+        "fair.a1": "Stand de Designious Corporation con dos pantallas: análisis de comportamiento humano con cámara infrarroja y el caso de éxito de la palma, junto al cartel del caso",
+        "fair.a2": "Tres personas frente al stand de Designious Corporation durante la feria",
+        "case.pause": "Pausar cambio automático",
+        "case.play": "Reanudar cambio automático",
+        "foot.linkedin": "Síguenos en LinkedIn",
         "foot.rights": "© 2026 Designious Corporation. Todos los derechos reservados."
       }
     },
@@ -69,12 +149,12 @@
       wa: "Hello, I'd like information about Designious Corporation's services.",
       i18n: {
         "skip": "Skip to content",
-        "nav.services": "Services", "nav.case": "Success story", "nav.videos": "In action", "nav.contact": "Contact",
+        "nav.services": "Services", "nav.case": "Success story", "nav.process": "Process", "nav.about": "About us", "nav.contact": "Contact",
         "cta.whatsapp": "Message us on WhatsApp",
         "hero.title": "Smart technology tailored to your business",
         "hero.lead": "AI, computer vision and drones that turn your images and data into decisions.",
         "hero.case": "See a real case", "hero.pdf": "Download portfolio",
-        "theme.group": "Style", "theme.black": "Black style", "theme.white": "White style", "theme.red": "Red style",
+        "theme.group": "Style", "theme.black": "Black style", "theme.white": "White style",
         "motto": "Your vision, our purpose",
         "video.sound": "Watch with sound", "video.mute": "Mute", "nav.down": "Scroll down",
         "services.title": "What Designious can do for your business",
@@ -116,10 +196,90 @@
         "vid.a": "The platform in use, from drone file to map",
         "vid.b": "Short tour of the platform",
         "vid.note": "Text inside the videos is in Spanish.",
+        "team.title": "The people behind Designious",
+        "team.lead": "A team that brings together leadership, client relations and engineering so your project succeeds. Get to know us and visit our professional profiles.",
+        "team.linkedin": "View LinkedIn profile",
+        "t1.role": "CEO",
+        "t1.bio": "Leads Designious' vision and strategy and makes sure every project turns technology into real results for our clients' business.",
+        "t1.c1": "Vision and strategy", "t1.c2": "Innovation", "t1.c3": "Automation", "t1.c4": "Computer vision",
+        "t2.bio": "The first point of contact for every project: listens to what you need, defines the scope with you and stays with you from the first conversation to the proposal.",
+        "t2.c1": "Client partnerships", "t2.c2": "Sales advisory", "t2.c3": "Proposals", "t2.c4": "Client care",
+        "t3.role": "Electrical engineer",
+        "t3.bio": "Designs and brings to life the electronics behind our solutions: prototypes, field equipment and microcomputers that process data on site.",
+        "t3.c1": "Electronics", "t3.c2": "Prototyping", "t3.c3": "Microcomputers",
+        "t4.role": "Engineering team",
+        "t4.bio": "Builds the solutions we deliver: from image and data processing to the maps and dashboards the client uses.",
+        "t4.c1": "Engineering",
         "ct.title": "Tell us what you want to solve",
         "ct.lead": "Message us on WhatsApp and let's talk about your project.",
-        "ct.pdf": "Download portfolio (PDF)", "ct.mail": "Email us",
+        "ct.mail": "Email us",
         "ct.role": "Commercial manager", "ct.note": "WhatsApp or call",
+        "ap.tag": "Applications",
+        "ap.title": "Where our technology can help you",
+        "ap.lead": "Today we serve the agribusiness sector, with a real oil palm case. The same technology applies to these areas.",
+        "a1.t": "Agribusiness",
+        "a1.d": "Plant counts, crop vigor and the zones that need attention.",
+        "a2.t": "Land and maps",
+        "a2.d": "2D and 3D maps of plots, properties and works, captured from the air.",
+        "a3.t": "Industry and processes",
+        "a3.d": "Automation of repetitive tasks and dashboards to decide with data.",
+        "a4.t": "Innovation and prototypes",
+        "a4.d": "From idea to working electronic hardware that processes data on site.",
+        "pr.tag": "How we work",
+        "pr.title": "From your need to results you can use",
+        "pr.lead": "A simple, transparent process with clear deliverables at every step.",
+        "p1.t": "Diagnosis",
+        "p1.d": "We listen to what you want to solve and review your data or images.",
+        "p2.t": "Proposal",
+        "p2.d": "We define the scope, deliverables and timeline before we start.",
+        "p3.t": "Development",
+        "p3.d": "We build and test the solution, and show you our progress.",
+        "p4.t": "Delivery",
+        "p4.d": "You receive the results in a clear format and we explain how to use them.",
+        "ab.tag": "About us",
+        "ab.title": "A technology innovation startup in Neiva, Huila",
+        "ab.p1": "Designious Corporation is a young startup created to bring artificial intelligence, computer vision and drones to companies and producers who want to decide with data.",
+        "ab.p2": "We are just getting started and we say so openly: we have one real case with real numbers, and we would rather show what we have done than promise what we have not. We recently presented our technology at a regional technology innovation fair.",
+        "ab.f1": "Neiva, Huila, Colombia",
+        "ab.f2": "Technology innovation startup",
+        "ab.f3": "Service in Spanish and English",
+        "ab.m.t": "Mission",
+        "ab.m.d": "Make smart technology accessible so more businesses in the region can turn their images and data into decisions.",
+        "v1.t": "Clarity",
+        "v1.d": "We explain our work in plain language, with measurable results.",
+        "v2.t": "Honesty",
+        "v2.d": "We only promise what we can deliver.",
+        "v3.t": "Tailored",
+        "v3.d": "Every solution starts from your problem, not from a template.",
+        "faq.tag": "FAQ",
+        "faq.title": "What people usually ask us",
+        "q1.q": "What data can I start with?",
+        "q1.a": "With aerial photos, images, spreadsheets or records you already have. If you do not have them yet, we define it together during the diagnosis.",
+        "q2.q": "How much does it cost and how long does it take?",
+        "q2.a": "It depends on the scope. After the diagnosis we send you a proposal with the price, deliverables and timeline.",
+        "q3.q": "What do I receive at the end?",
+        "q3.a": "Results you can use: maps, dashboards and reports with recommendations, as in the oil palm plantation case.",
+        "q4.q": "Do you work outside Neiva?",
+        "q4.a": "We are based in Neiva, Huila, Colombia. Tell us where your project is and we will assess how to serve it.",
+        "s1.o": "Delivers: clear dashboards and reports",
+        "s2.o": "Delivers: counts, detections and vigor maps",
+        "s3.o": "Delivers: a working prototype",
+        "s4.o": "Delivers: 2D/3D maps and vegetation indices",
+        "s5.o": "Delivers: processes that run on their own",
+        "s6.o": "Delivers: devices ready to work in the field",
+        "ct.loc": "Neiva, Huila, Colombia",
+        "foot.privacy": "Privacy policy",
+        "ap.now": "Sector we serve today",
+        "ab.f4": "Current sector: agribusiness",
+        "fair.title": "At the Chamber of Commerce innovation fair",
+        "fair.lead": "We presented our solutions live and achieved business approaches with clients, federations and key trade associations in the region.",
+        "fair.c1": "Screen 1: infrared-spectrum camera for human behavior analysis, another of our solutions. Screen 2: the oil palm plantation success story, from drone images to the vigor map and priority zones.",
+        "fair.c2": "At our booth during the fair.",
+        "fair.a1": "Designious Corporation booth with two screens: human behavior analysis with an infrared camera and the oil palm success story, next to the case poster",
+        "fair.a2": "Three people in front of the Designious Corporation booth at the fair",
+        "case.pause": "Pause auto-advance",
+        "case.play": "Resume auto-advance",
+        "foot.linkedin": "Follow us on LinkedIn",
         "foot.rights": "© 2026 Designious Corporation. All rights reserved."
       }
     }
@@ -139,7 +299,7 @@
   }
 
   function setLang(next) {
-    if (!T[next]) next = "es";
+    if (!Object.prototype.hasOwnProperty.call(T, next)) next = "es";
     lang = next;
     var d = T[lang];
     root.lang = lang;
@@ -175,11 +335,11 @@
     b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
   });
 
-  /* ----- Estilo (negro / blanco / rojo) ----- */
-  var THEME_COLOR = { black: "#030408", white: "#ffffff", red: "#fe0000" };
+  /* ----- Estilo (blanco / negro) ----- */
+  var THEME_COLOR = { black: "#030408", white: "#ffffff" };
   var theme = "white";
   function setTheme(next) {
-    if (!THEME_COLOR[next]) next = "white";
+    if (!Object.prototype.hasOwnProperty.call(THEME_COLOR, next)) next = "white";
     theme = next;
     root.setAttribute("data-theme", theme);
     var tone = theme === "white" ? "black" : "white";   // logo oscuro sobre fondo blanco; claro en los demás
@@ -300,6 +460,57 @@
       players.forEach(function (p) { p.video.muted = true; });
       syncSound();
     });
+  });
+
+  /* ----- Caso de éxito: las etapas cambian solas mientras se ven en pantalla ----- */
+  (function () {
+    var box = doc.querySelector(".steps"), btn = doc.querySelector(".steps__toggle");
+    if (!box || !tabs.length || !("IntersectionObserver" in window)) return;
+    var EVERY = 2500, timer = null, visible = false, stopped = false;
+    box.style.setProperty("--auto", EVERY + "ms");
+
+    function current() {
+      for (var i = 0; i < tabs.length; i++) if (tabs[i].classList.contains("is-active")) return i;
+      return 0;
+    }
+    function label() {
+      if (!btn) return;
+      var key = stopped ? "case.play" : "case.pause";
+      btn.setAttribute("data-i18n", key);
+      btn.setAttribute("aria-pressed", String(stopped));
+      btn.textContent = T[lang].i18n[key];
+    }
+    function update() {
+      clearInterval(timer);
+      box.classList.remove("is-auto");
+      label();
+      if (!visible || stopped || doc.hidden) return;
+      void box.offsetWidth;                      // reinicia la barra de avance
+      box.classList.add("is-auto");
+      timer = setInterval(function () {
+        showStep(tabs[(current() + 1) % tabs.length].getAttribute("data-step"));
+      }, EVERY);
+    }
+    // Si la persona elige una etapa, deja de cambiar sola; el botón permite reanudar
+    function stop() { stopped = true; update(); }
+
+    new IntersectionObserver(function (es) { visible = es[0].isIntersecting; update(); }, { threshold: 0.2 }).observe(box);
+    box.addEventListener("click", function (e) { if (e.target.closest && e.target.closest(".step")) stop(); });
+    box.addEventListener("keydown", function (e) { if (e.target.closest && e.target.closest(".step")) stop(); });
+    if (btn) btn.addEventListener("click", function () { stopped = !stopped; update(); });
+    doc.addEventListener("visibilitychange", update);
+  })();
+
+  /* ----- Equipo: si falta la foto de una persona, quedan sus iniciales ----- */
+  var PHOTO_EXT = ["jpg", "png", "jpeg", "webp"];   // acepta la foto en cualquiera de estos formatos
+  doc.querySelectorAll(".member__photo img").forEach(function (img) {
+    var base = img.getAttribute("src").replace(/\.[a-z]+$/i, ""), i = 0;
+    function next() {
+      i += 1;
+      if (i < PHOTO_EXT.length) img.src = base + "." + PHOTO_EXT[i]; else img.remove();
+    }
+    img.addEventListener("error", next);
+    if (img.complete && img.naturalWidth === 0) next();
   });
 
   /* ----- Inicio ----- */

@@ -4,10 +4,12 @@ Página de presentación bilingüe (español / inglés), estática, publicada co
 
 ## Estructura
 ```
-index.html        página única
+index.html        página principal
+privacidad.html   política de privacidad (borrador, conviene revisión legal)
 css/styles.css    estilos
 js/main.js        idioma ES/EN, etapas del caso, contadores
 assets/img        logos, imágenes del caso, íconos, imagen para redes
+assets/img/team   fotos del equipo (ver "Editar → Equipo")
 assets/video      3 videos optimizados + imágenes de portada
 assets/docs       portafolio (cartelera) en PDF
 CNAME             dominio personalizado (no borrar)
@@ -25,3 +27,5 @@ CNAME             dominio personalizado (no borrar)
 ## Editar
 - Textos en español e inglés: `js/main.js` (objeto `T`) y los textos base en `index.html`.
 - Colores de marca: variables al inicio de `css/styles.css`.
+- Equipo: sección `#equipo` en `index.html` (nombre, enlace de LinkedIn) y sus textos ES/EN en `js/main.js` (claves `t1.*` a `t4.*`). Las cuatro tarjetas tienen el mismo tamaño; el orden en pantalla es el del código HTML.
+  - Fotos en `assets/img/team/` (`.jpg`, `.png`, `.jpeg` o `.webp`, nombre en minúsculas) con estos nombres: `ceo.jpg`, `diego-lomelin.jpg`, `daniel-lomelin.jpg`, `luisa-avalo.jpg`. Recomendado: cuadradas de 800×800 px, con cabeza y hombros y el rostro centrado. Si falta una foto, la tarjeta muestra las iniciales.
