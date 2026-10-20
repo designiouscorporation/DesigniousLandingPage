@@ -1,6 +1,13 @@
 /* Designious Corporation — dos estilos de marca: blanco (predeterminado) y negro.
    El estilo se cambia con data-theme="white|black" en <html>. */
 
+/* Tipografías alojadas en el propio sitio (licencia SIL OFL, ver assets/fonts) */
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/poppins-400-latin.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/poppins-500-latin.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/fonts/poppins-600-latin.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/poppins-700-latin.woff2") format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400 500; font-display: swap; src: url("../assets/fonts/playfair-display-latin.woff2") format("woff2"); }
+
 /* Blanco: estilo predeterminado (la página abre así) */
 :root,
 :root[data-theme="white"] {

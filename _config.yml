@@ -1,0 +1,7 @@
+# Configuración de publicación en GitHub Pages.
+# include: publica la carpeta .well-known (Jekyll ignora por defecto las carpetas que empiezan con punto).
+# exclude: archivos del repositorio que no deben quedar visibles en el sitio.
+include:
+  - .well-known
+exclude:
+  - README.md
