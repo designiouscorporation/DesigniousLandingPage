@@ -128,6 +128,13 @@ a { color: inherit; }
 .top__nav a:hover { color: var(--base-fg); border-color: var(--base-fg); }
 .top__tools { display: flex; align-items: center; gap: 14px; }
 
+/* botón de menú: solo aparece en celulares y tabletas */
+.top__menu { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 0 11px; background: none; border: 1px solid var(--base-line-strong); border-radius: 2px; cursor: pointer; }
+.top__menu span { display: block; height: 2px; background: var(--base-fg); transition: transform .2s ease, opacity .2s ease; }
+.top.is-open .top__menu span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.top.is-open .top__menu span:nth-child(2) { opacity: 0; }
+.top.is-open .top__menu span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 .lang { display: inline-flex; border: 1px solid var(--base-line-strong); border-radius: 2px; }
 .lang__btn { background: none; border: 0; color: var(--base-fg); font: 600 .8rem/1 var(--f-sans); padding: 10px 12px; cursor: pointer; letter-spacing: .04em; }
 .lang__btn[aria-pressed="true"] { background: var(--invert-bg); color: var(--invert-fg); }
@@ -360,8 +367,13 @@ body, .top, .intro, .sec--base, .case__body, .case__band, .team, .contact, .foot
 @media (max-width: 1020px) {
   :root { --header-h: 76px; }
   .top__brand img { height: 48px; }
-  .top__nav { display: none; }
+  .top__nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; margin: 0; padding: 4px 0 12px; background: var(--base-bg); border-bottom: 1px solid var(--base-line); box-shadow: 0 12px 24px rgba(3,4,8,.12); }
+  .top.is-open .top__nav { display: flex; }
+  .top__nav a { padding: 14px clamp(16px, 4vw, 28px); font-size: 1.05rem; color: var(--base-fg); border-bottom: 1px solid var(--base-line); }
+  .top__nav a:last-child { border-bottom: 0; }
+  .top__nav a:hover { border-color: var(--base-line); color: var(--icon); }
   .top__tools { margin-left: auto; }
+  .top__menu { display: inline-flex; }
   .hero__grid { grid-template-columns: 1fr; }
   .stage { margin-bottom: 8px; }
   .steps { grid-template-columns: 1fr; }
@@ -408,7 +420,7 @@ body, .top, .intro, .sec--base, .case__body, .case__band, .team, .contact, .foot
   .pane.is-active { animation: none; }
   .steps.is-auto .step.is-active::after { display: none; }
   body, .top, .intro, .sec--base, .case__body, .case__band, .team, .contact, .foot, .person, .what__item { transition: none; }
-  .member__link { transition: none; }
+  .member__link, .top__menu span { transition: none; }
 }
 
 /* ---------- Página de privacidad ---------- */

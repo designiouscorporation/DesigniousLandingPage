@@ -10,6 +10,7 @@
       i18n: {
         "skip": "Saltar al contenido",
         "nav.services": "Servicios", "nav.case": "Caso de éxito", "nav.process": "Proceso", "nav.about": "Nosotros", "nav.contact": "Contacto",
+        "nav.open": "Abrir menú", "nav.close": "Cerrar menú",
         "cta.whatsapp": "Escríbenos por WhatsApp",
         "hero.title": "Tecnología inteligente a la medida de tu negocio",
         "hero.lead": "IA, visión por computadora y drones que convierten tus imágenes y datos en decisiones.",
@@ -150,6 +151,7 @@
       i18n: {
         "skip": "Skip to content",
         "nav.services": "Services", "nav.case": "Success story", "nav.process": "Process", "nav.about": "About us", "nav.contact": "Contact",
+        "nav.open": "Open menu", "nav.close": "Close menu",
         "cta.whatsapp": "Message us on WhatsApp",
         "hero.title": "Smart technology tailored to your business",
         "hero.lead": "AI, computer vision and drones that turn your images and data into decisions.",
@@ -334,6 +336,28 @@
   doc.querySelectorAll(".lang__btn").forEach(function (b) {
     b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
   });
+
+  /* ----- Menú en celulares y tabletas ----- */
+  var top = doc.getElementById("top"), menuBtn = doc.querySelector(".top__menu");
+  function setMenu(open) {
+    top.classList.toggle("is-open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.setAttribute("data-i18n-aria", open ? "nav.close" : "nav.open");
+    menuBtn.setAttribute("aria-label", T[lang].i18n[open ? "nav.close" : "nav.open"]);
+  }
+  if (top && menuBtn) {
+    menuBtn.addEventListener("click", function () { setMenu(!top.classList.contains("is-open")); });
+    doc.querySelectorAll(".top__nav a").forEach(function (a) {
+      a.addEventListener("click", function () { setMenu(false); });
+    });
+    doc.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && top.classList.contains("is-open")) { setMenu(false); menuBtn.focus(); }
+    });
+    doc.addEventListener("click", function (e) {
+      if (top.classList.contains("is-open") && !top.contains(e.target)) setMenu(false);
+    });
+    window.addEventListener("resize", function () { if (window.innerWidth > 1020) setMenu(false); });
+  }
 
   /* ----- Estilo (blanco / negro) ----- */
   var THEME_COLOR = { black: "#030408", white: "#ffffff" };
