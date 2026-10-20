@@ -27,5 +27,6 @@ CNAME             dominio personalizado (no borrar)
 ## Editar
 - Textos en español e inglés: `js/main.js` (objeto `T`) y los textos base en `index.html`.
 - Colores de marca: variables al inicio de `css/styles.css`.
+- Al cambiar `css/styles.css` o `js/main.js`, actualizar el número `?v=` con el que se cargan en `index.html` y `privacidad.html` (por ejemplo la fecha del cambio). Así los navegadores descargan la versión nueva en lugar de usar la guardada.
 - Equipo: sección `#equipo` en `index.html` (nombre, enlace de LinkedIn) y sus textos ES/EN en `js/main.js` (claves `t1.*` a `t4.*`). Las cuatro tarjetas tienen el mismo tamaño; el orden en pantalla es el del código HTML.
   - Fotos en `assets/img/team/` (`.jpg`, `.png`, `.jpeg` o `.webp`, nombre en minúsculas) con estos nombres: `ceo.jpg`, `diego-lomelin.jpg`, `daniel-lomelin.jpg`, `luisa-avalo.jpg`. Recomendado: cuadradas de 800×800 px, con cabeza y hombros y el rostro centrado. Si falta una foto, la tarjeta muestra las iniciales.
