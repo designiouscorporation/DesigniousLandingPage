@@ -347,7 +347,7 @@ a { color: inherit; }
 .foot__social { display: inline-flex; align-items: center; gap: 8px; margin: 6px 0; color: var(--base-fg); font-weight: 600; text-underline-offset: 4px; }
 .foot__social svg { width: 20px; height: 20px; flex: none; fill: currentColor; }
 .foot__social:hover { text-decoration: underline; }
-.foot__loc { margin-bottom: 4px; }
+.foot__loc, .foot__nit { margin-bottom: 4px; }
 .foot__legal a { color: var(--base-fg); text-underline-offset: 4px; }
 .foot__motto { font-family: var(--f-serif); letter-spacing: .14em; text-transform: uppercase; color: var(--base-fg); font-size: 1rem; margin-bottom: 8px; }
 
